@@ -5,7 +5,7 @@ using System.Text;
 
 namespace g3
 {
-    public class IntrRay3Triangle3
+    public struct IntrRay3Triangle3
     {
         Ray3d ray;
         public Ray3d Ray

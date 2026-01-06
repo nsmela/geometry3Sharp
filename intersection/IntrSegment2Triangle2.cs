@@ -3,7 +3,7 @@
 namespace g3 
 {
 	// ported from WildMagic5 
-	public class IntrSegment2Triangle2
+	public struct IntrSegment2Triangle2
 	{
 		Segment2d segment;
 		public Segment2d Segment

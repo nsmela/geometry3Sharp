@@ -3,7 +3,7 @@
 namespace g3
 {
 	// ported from WildMagic5 
-	public class IntrLine2Line2
+	public struct IntrLine2Line2
     {
         Line2d line1;
         public Line2d Line1
