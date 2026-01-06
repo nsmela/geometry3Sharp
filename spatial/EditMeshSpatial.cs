@@ -66,7 +66,7 @@ namespace gs
                 return hit_source_tid;
 
             IntrRay3Triangle3 source_hit = (hit_source_tid != -1) ?
-                MeshQueries.TriangleIntersection(SourceMesh, hit_source_tid, ray) : null;
+                MeshQueries.TriangleIntersection(SourceMesh, hit_source_tid, ray) : new IntrRay3Triangle3();
             return (edit_hit.RayParameter < source_hit.RayParameter) ?
                 hit_edit_tid : hit_source_tid;
         }
@@ -80,7 +80,7 @@ namespace gs
         IntrRay3Triangle3 find_added_hit(ref Ray3d ray, out int hit_tid)
         {
             hit_tid = DMesh3.InvalidID;
-            IntrRay3Triangle3 nearest = null;
+            IntrRay3Triangle3 nearest = new IntrRay3Triangle3();
             double dNearT = double.MaxValue;
 
             Triangle3d tri = new Triangle3d();

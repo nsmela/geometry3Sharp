@@ -42,7 +42,7 @@ namespace g3
 				if (intr.Find())
 					return intr;
 			}
-			return null;
+			return new IntrSegment2Segment2();
 		}
 
 
